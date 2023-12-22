@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="stylesheet" type=" text/css" href="learn.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+</head>
+<body>
+      <!-- NAVBAR -->
+      <header>
+        <p class="logo">RIGHT SAFARI</p>
+
+        <ul class="navbar">
+            <div class="one">
+                <li><a href="index.html">Home</a></li>
+            </div>
+            <div class="two">
+                <li><a href="games.html">Games</a></li>
+            </div>
+            <div class="three">
+                <li><a href="anime.html">Animation</a></li>
+            </div>
+            <div class="four">
+                <li><a href="learn.html">Learn</a></li>
+            </div>
+        </ul>
+
+        <div class="main">
+            <a href="./loginregister/login.php" class="user"><i class="ri-file-user-fill"></i>Profile</a>
+            <div class="bx bx-menu" id="menu-icon"></div>
+        </div>
+    </header>
+
+          <!-- cards for ppt -->
+
+        
+  <div class="card-container">
+    <div class="card">
+      <img src="./images/right to education.jpg" alt="Card Image" class="card-image">
+      <div class="card-content">
+        <h3 class="card-title">Right to education</h3>
+        <a href="./ppt/Right to education.pptx" class="btn">learn more</a>
+      </div>
+    </div>
+  
+    <div class="card">
+      <img src="./images/Right to healthcare.jpg" alt="Card Image" class="card-image">
+      <div class="card-content">
+        <h3 class="card-title">Right to healthcare</h3>
+        <a href="./ppt/Right to healthcare.pptx" class="btn">learn more</a>
+      </div>
+    </div>
+  
+    <div class="card">
+      <img src="./images/Right to equality.jpg" alt="Card Image" class="card-image">
+      <div class="card-content">
+        <h3 class="card-title">Right to equality</h3>
+        <a href="./ppt/RightToEquality.pptx" class="btn">learn more</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="./images/Right to freedom from trafflicking and bounded labour.jpg" alt="Card Image" class="card-image">
+      <div class="card-content">
+        <h3 class="card-title">Right against bounded labour</h3>
+        <a href="./ppt/RightToFreedomFromTraffickingAndBondedLabour.pptx" class="btn">learn more</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="./images/Right to freedom of expression.jpg" alt="Card Image" class="card-image">
+      <div class="card-content">
+        <h3 class="card-title">Right to Expression</h3>
+        <a href="./ppt/right to freedom of expression .pptx" class="btn">learn more</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="./images/Right to identity.jpg" alt="Card Image" class="card-image">
+      <div class="card-content">
+        <h3 class="card-title">Right to Identity</h3>
+        <a href="./ppt/Right to identify.pptx" class="btn">learn more</a>
+      </div>
+    </div>
+
+   
+     
+          
+
+    <!-- JAVASCRIPT -->
+    <script>
+        let menu = document.querySelector('#menu-icon');
+        let navbar = document.querySelector('.navbar');
+
+        menu.onclick = () => {
+            menu.classList.toggle('bx-x');
+            navbar.classList.toggle('open');
+        }
+    </script>
+</body>
+</html>

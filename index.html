@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomePage</title>
+    <link rel="stylesheet" type=" text/css" href="rightsafari.css">
+
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <!-- <link href="https://db.onlinewebfonts.com/c/b9678150478906d302154e630e7758fc?family=Irish+Grover" rel="stylesheet"> -->
+</head>
+
+<body>
+
+
+    <!-- NAVBAR -->
+    <header>
+        <p class="logo">RIGHT SAFARI</p>
+
+        <ul class="navbar">
+            <div class="one">
+                <li><a href="index.html">Home</a></li>
+            </div>
+            <div class="two">
+                <li><a href="games.html">Games</a></li>
+            </div>
+            <div class="three">
+                <li><a href="anime.html">Animation</a></li>
+            </div>
+            <div class="four">
+                <li><a href="learn.html">Learn</a></li>
+            </div>
+        </ul>
+
+        <div class="main">
+            <a href="loginpg.html" class="user"><i class="ri-file-user-fill"></i>Profile</a>
+            <div class="bx bx-menu" id="menu-icon"></div>
+        </div>
+    </header>
+
+    <!-- Banner -->
+    <div class="banner">
+        <img src="./images/banner.jpg" class="banner">
+        <div class="content">
+            <h2>"PLAY TODAY,<br>ADVOCATE TOMORROW"</h2>
+            <button class="btn2">Join Us</button>
+        </div>
+    </div>
+
+    <!-- Heading -->
+    <h2 class="heading">Modular learning</h2>
+    <div class="line"></div>
+    <div class="line2"></div>
+
+    <!-- Cards -->
+    <div class="container">
+        <div class="cards">
+          <div class="card-one">
+            <img src="./images/animation.jpg" alt="Image 1">
+            <h2 class="card-title">"Animation"</h2>
+            <p class="card-text">Engaging animated videos that bring children's rights to life through captivating
+            stories and characters, making learning fun and memorable.</p>
+             <a href="./anime.html" class="btn3">Videos</a>
+          </div>
+
+          <div class="card-two">
+            <img src="./images/track progress.jpg" alt="Image 2">
+            <h2 class="card-title">"Interactive rights learning"</h2>
+            <p class="card-text">Dive into an interactive world of lessons and activities designed to empower children with knowledge
+                about their rights and responsibilities, fostering critical thinking and
+                empathy.</p>
+            <a href="learn.html" class="btn3">Learn more</a>
+          </div>
+
+          <div class="card-three">
+            <img src="./images/interactive lesson.jpg" alt="Image 3">
+            <h2 class="card-title">"Right Quests-play games"</h2>
+            <p class="card-text"> Embark on exciting gaming adventures that challenge players to apply their knowledge of child rights in real-life scenarios, fostering problem-solving skills and a sense of empowerment.
+            </p>
+            <a href="games.html" class="btn3">Play</a>
+          </div>
+
+          <div class="card-four">
+            <img src="./images/track.jpg" alt="Image 4">
+            <h2 class="card-title">"Progress Pathfinders - Track Your Progress"</h2>
+            <p class="card-text"> Monitor your journey to legal literacy and empowerment with personalized progress tracking. Celebrate milestones and set new goals as you become a confident advocate for children's rights.</p>
+            <a href="track.html" class="btn3">Track</a>
+          </div>
+        </div>
+       </div>
+
+    <!-- FOOTER -->
+    <div class="footer">
+        <div class="first">
+            <li>About Us</li>
+            <li>Play</li>
+            <li>Learn About Your Rights</li>
+            <li>Feedback</li>
+        </div>
+        <div class="name">
+            <p class="logo">RIGHT SAFARI</p>
+        </div>
+    </div>
+
+
+
+    </div>
+    <!-- JAVASCRIPT -->
+    <script>
+        let menu = document.querySelector('#menu-icon');
+        let navbar = document.querySelector('.navbar');
+
+        menu.onclick = () => {
+            menu.classList.toggle('bx-x');
+            navbar.classList.toggle('open');
+        }
+    </script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,258 @@
+@import url(https://db.onlinewebfonts.com/c/b9678150478906d302154e630e7758fc?family=Irish+Grover);
+*{
+    background-color: rgb(242, 244, 246);
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+header{
+    position: fixed;
+    width: 100%;
+    top:0;
+    right: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 4%;
+    /* transition: all .50s ease; */
+    /* box-shadow: 0 2px 6px #b0afaf; */
+    background: linear-gradient( rgb(244, 165, 92),rgb(243, 240, 240));
+}
+.logo{
+    display: flex;
+    align-items: center;
+    font-size: 1.7rem;
+    font-family: "Irish Grover";
+    background: transparent;
+    /* background: linear-gradient( rgb(249, 184, 122),rgb(213, 179, 153)); */
+    /* font-family: grover, sans-serif; */
+}
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    gap: 1%;
+    width: 50%;
+}
+.one{
+    background-color: rgba(255, 143, 128, 1);
+    padding: 6%;
+}
+.one a, .one li{
+    background-color: rgba(255, 143, 128, 1);
+    text-align: center;
+    color: black;
+    font-size: 1.2rem;
+}
+.one:hover{
+    box-shadow: 0 10px 14px 0 rgba(85, 64, 50, 0.24), 0 17px 50px 0 rgba(203, 83, 83, 0.19);
+}
+.two:hover{
+    box-shadow: 0 10px 14px 0 rgba(85, 64, 50, 0.24), 0 17px 50px 0 rgba(203, 83, 83, 0.19);
+}
+.three:hover{
+    box-shadow: 0 10px 14px 0 rgba(85, 64, 50, 0.24), 0 17px 50px 0 rgba(203, 83, 83, 0.19);
+}
+.four:hover{
+    box-shadow: 0 10px 14px 0 rgba(85, 64, 50, 0.24), 0 17px 50px 0 rgba(203, 83, 83, 0.19);
+}
+.two{
+    background-color: rgba(206, 210, 118, 1);
+    padding: 6%;
+}
+.two a, .two li{
+    background-color: rgba(206, 210, 118, 1);
+    text-align: center;
+    color: black;
+    font-size: 1.2rem;
+}
+.three{
+    background-color: rgba(253, 232, 157, 1);
+    padding: 6%;
+}
+.three a, .three li{
+    background-color: rgba(253, 232, 157, 1);
+    text-align: center;
+    color: black;
+    font-size: 1.2rem;
+}
+.four{
+    background-color: rgba(186, 206, 219, 1);
+    padding: 6%;
+}
+.four a, .four li{
+    text-align: center;
+    background-color: rgba(186, 206, 219, 1);
+    color: black;
+    font-size: 1.2rem;
+}
+.main{
+    display: flex;
+    align-items: center;
+    background: transparent;
+}
+.main a{
+    margin-right: 25px;
+    margin-left: 10px;
+    color: black;
+    font-size: 1.3rem;
+    font-weight: 520;
+}
+.user{
+    display: flex;
+    align-items: center;
+    background: transparent;
+}
+.user i{
+    color: rgb(114, 115, 116);
+    font-size: 2rem;
+    margin-right: 5px;
+    background: transparent;
+}
+#menu-icon{
+    font-size: 35px;
+    color: black;
+    background-color: rgb(249, 247, 247);
+    cursor: pointer;
+    z-index: 10001;
+    display: none;
+}
+.banner{
+    width: 80%;
+    height: 80vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* margin-top: 6%; */
+    margin-left: 8%;
+}
+.btn2{
+    background-color: rgb(232, 51, 51);
+    border: none;
+    padding: 1% 3%;
+    margin-top: -35%;
+    margin-right: 25%;
+    /* margin-left: -80%; */
+    border-radius: 1rem;
+    font-size: 1.4rem;
+    font-weight: 800;
+    color: white;
+    margin-left: 35%;
+    cursor: pointer;
+}
+.btn2:hover{
+    background-color: rgb(228, 80, 80);
+}
+
+.btn3{
+    background-color: rgb(88, 31, 201);
+    border: none;
+    padding: 1% 3%;
+    margin-top: -35%;
+    margin-right: 25%;
+    /* margin-left: -80%; */
+    border-radius: 1rem;
+    font-size: 1.4rem;
+    font-weight: 800;
+    color: white;
+    margin-left: 35%;
+    cursor: pointer;
+}
+.btn3:hover{
+    background-color: rgb(106, 15, 234);
+}
+@media (max-width: 1280px){
+    header{
+        padding: 14px;
+        transition: .2s;
+    }
+    .navbar a{
+        padding: 5px 0;
+        margin: 0px 20px;
+    }
+}
+@media (max-width: 1090px){
+    #menu-icon{
+        display: block;
+        background-color: transparent;
+    }
+    .navbar{
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        width: 250px;
+        height: 49vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        border-radius: 10px;
+        transition: all .50s ease;
+        background-color: aliceblue;
+    }
+    .one, .two, .three, .four{
+        background-color: aliceblue;
+    }
+    .navbar a{
+        display: block;
+        margin: 20px 0;
+        padding: 0px 25px;
+        transition: all .50s ease;
+        background-color: aliceblue;
+    }
+   .navbar a:hover{
+        color: rgb(66, 86, 97);
+        transform: translateY(5px);
+    }
+    .navbar.open{
+       right: 2%;
+    } 
+}
+/* css for heading */
+.heading{
+    text-align: center;
+    font-size: 2.5rem;
+    margin-top: 12%;
+    margin-bottom:-7%;
+    font-family: "Irish Grover";
+    /* font-family: cursive; */
+
+}
+
+.heading2{
+    text-align: center;
+    font-size: 2.5rem;
+    margin-top: 12%;
+    margin-bottom:-7%;
+    font-family: "Irish Grover";
+    /* font-family: cursive; */
+
+}
+ 
+/* css for footer */
+.footer{
+    width: 100%;
+    height: 30vh;
+    background-color: rgba(77, 73, 73, 1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    margin-top: 20%;
+    gap: .5%;
+}
+.footer p{
+    background-color: rgba(77, 73, 73, 1);
+}
+.first{
+    display: flex;
+    background-color: rgba(77, 73, 73, 1);
+    margin-bottom: 2%;
+}

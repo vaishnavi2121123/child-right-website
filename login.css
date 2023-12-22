@@ -1,0 +1,133 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('images/bg.jpg'); /* Replace 'background.jpg' with the path to your background image */
+    background-size: cover;
+    background-position: center;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+}
+
+.login-box, .signup-box {
+    display: none;
+    padding: 20px;
+    border: 2px solid #ff9999;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+/* Rest of the CSS remains the same */
+
+.input-group {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.input-group i {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    padding-left: 35px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.eye {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    background-image: url('eye.png'); /* Eye icon image */
+    background-size: cover;
+    cursor: pointer;
+}
+
+.remember-me {
+    font-size: small;
+    margin-bottom: 15px;
+}
+
+.message {
+    margin-top: 10px;
+    color: green;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #ff9999;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ff6666;
+}
+
+/* Media Queries for Responsive Design */
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    .login-box, .signup-box {
+        margin-bottom: 15px;
+    }
+}
+/* ... previous styles ... */
+
+.input-group {
+    position: relative;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.input-group i {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1; /* Ensure the icon stays above the input field */
+}
+
+.input-group input {
+    width: calc(100% - 40px); /* Adjust the width of the input field */
+    padding: 10px;
+    padding-left: 35px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    z-index: 0; /* Ensure the input field is below the icon */
+}
+
+.input-group .eye {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+/* ... previous styles ... */
+

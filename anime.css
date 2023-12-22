@@ -1,0 +1,46 @@
+@import url(https://db.onlinewebfonts.com/c/b9678150478906d302154e630e7758fc?family=Irish+Grover);
+.thumbnail-image {
+    max-width: 100%;
+    height: auto;}
+/* .thumbnail-image2{
+    max-width: 100%;
+    height: 70%;
+} */
+.logo1{
+    display: flex;
+    align-items: center;
+    font-size: 1.7rem;
+    background: transparent;
+    color: white;
+    background: linear-gradient( rgb(244, 165, 92),rgb(243, 240, 240));
+    font-family: "Irish Grover";
+   
+}
+.menu-item{
+    text-align: center;
+}
+.menu-item :hover{
+    color: black;
+}
+.menu-item.home {
+    background-color: #3498db; /* Blue color for Home */
+}
+
+.menu-item.games {
+    background-color: #e74c3c; /* Red color for Games */
+}
+
+.menu-item.learn {
+    background-color: #2ecc71; /* Green color for Learn */
+}
+
+.menu-item.track {
+    background-color: #f39c12; /* Orange color for Track */
+}
+
+
+
+
+
+
+
